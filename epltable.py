@@ -4,10 +4,8 @@ import requests
 from bs4 import BeautifulSoup
 import pandas as pd
 
-
 # Load the webpage content
 r = requests.get('https://www.premierleague.com/tables') 
-
 
 # Convert to beautiful soup object
 soup = BeautifulSoup(r.content, features='lxml')
