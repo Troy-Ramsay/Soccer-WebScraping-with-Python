@@ -17,5 +17,5 @@ for tag in soup.find_all(class_=class_names):
     tag.decompose()
 
 df = (pd.read_html(str(soup))[0]) 
-print(pd)
+print(df)
 
